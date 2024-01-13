@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com -->
+<!-- Last Published: Wed Jan 10 2024 19:53:19 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="ovo-glossy.webflow.io" data-wf-page="659311ec9ef09a39d5b1fe8e" data-wf-site="659311ec9ef09a39d5b1fe8d" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home V1 - Glossy - Webflow Ecommerce website template</title>
+    <meta content="Discover the future of SaaS design with Glossy – a sleek, multilayout template featuring dark mode. Elevate your online presence effortlessly." name="description" />
+    <meta content="Home V1 - Glossy - Webflow Ecommerce website template" property="og:title" />
+    <meta content="Discover the future of SaaS design with Glossy – a sleek, multilayout template featuring dark mode. Elevate your online presence effortlessly." property="og:description" />
+    <meta content="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659c242f8b8d19bf513b8ae1_Open%20Graph.png" property="og:image" />
+    <meta content="Home V1 - Glossy - Webflow Ecommerce website template" property="twitter:title" />
+    <meta content="Discover the future of SaaS design with Glossy – a sleek, multilayout template featuring dark mode. Elevate your online presence effortlessly." property="twitter:description" />
+    <meta content="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659c242f8b8d19bf513b8ae1_Open%20Graph.png" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/css/ovo-glossy.webflow.865908f14.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Inter:100,200,300,regular,500,600,700,800,900"]
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        ! function(o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659312a9af52e959dc3b5377_Fav.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659312acc76e313ce2d48428_Fav-1.png" rel="apple-touch-icon" />
+    <script type="text/javascript">
+        window.__WEBFLOW_CURRENCY_SETTINGS = {
+            "currencyCode": "USD",
+            "symbol": "$",
+            "decimal": ".",
+            "fractionDigits": 2,
+            "group": ",",
+            "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}",
+            "hideDecimalForWholeNumbers": false
+        };
+    </script>
+</head>
+
+<body>
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="container navbar-container">
+            <div class="navbar-holder">
+                <div class="navbar-container">
+                    <div class="brand-holder"><a href="/ovo-glossy.webflow.io/home-v1.html" aria-current="page" class="brand w-nav-brand w--current"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659315bc19a3d673be9b9907_Main%20Logo.svg" loading="lazy" alt="" class="brand-image"/></a></div>
+                    <nav
+                        role="navigation" class="nav-menu w-nav-menu">
+                        <div class="nav-menu-link-holder">
+                            <div class="nav-menu-link-container">
+                                <div class="nav-links"><a href="/ovo-glossy.webflow.io/home-v1.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+                                    <a href="/ovo-glossy.webflow.io/blog-v1.html" class="nav-link w-nav-link">Blog</a>
+                                    <a href="/about" class="nav-link w-nav-link">About</a>
+                                    <div data-hover="true" data-delay="600" data-w-id="04f83e17-5d34-2d13-6041-b83d513a5b93"
+                                        class="dropdown w-dropdown">
+                                        <!-- <div class="dropdown-toggle w-dropdown-toggle">
+                                            <div class="nav-link w-nav-linkk">Blog</div>
+                                        </div> -->
+                                        
+                                    
+                                    </div><a href="/contact/contact-v1" class="nav-link w-nav-link">Contact</a></div>
+                            </div>
+                        </div>
+                        </nav>
+                        <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="rightDropdown" data-wf-cart-query="query Dynamo2 {
+  database {
+    id
+    commerceOrder {
+      comment
+      extraItems {
+        name
+        pluginId
+        pluginName
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+      }
+      id
+      startedOn
+      statusFlags {
+        hasDownloads
+        hasSubscription
+        isFreeOrder
+        requiresShipping
+      }
+      subtotal {
+        value
+        unit
+        decimalValue
+        string
+      }
+      total {
+        value
+        unit
+        decimalValue
+        string
+      }
+      updatedOn
+      userItems {
+        count
+        id
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+        product {
+          id
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_ec_product_type_2dr10dr {
+            id
+            name
+          }
+          f_name_
+          f_sku_properties_3dr {
+            id
+            name
+            enum {
+              id
+              name
+              slug
+            }
+          }
+        }
+        rowTotal {
+          value
+          unit
+          decimalValue
+          string
+        }
+        sku {
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_main_image_4dr {
+            url
+            file {
+              size
+              origFileName
+              createdOn
+              updatedOn
+              mimeType
+              width
+              height
+              variants {
+                origFileName
+                quality
+                height
+                width
+                s3Url
+                error
+                size
+              }
+            }
+            alt
+          }
+          f_sku_values_3dr {
+            property {
+              id
+            }
+            value {
+              id
+            }
+          }
+          id
+        }
+        subscriptionFrequency
+        subscriptionInterval
+        subscriptionTrial
+      }
+      userItemsCount
+    }
+  }
+  site {
+    id
+    commerce {
+      businessAddress {
+        country
+      }
+      defaultCountry
+      defaultCurrency
+      quickCheckoutEnabled
+    }
+  }
+}
+" data-wf-page-link-href-prefix="" data-wf-cart-duration="400" class="w-commerce-commercecartwrapper cart">
+                            <a href="#" data-node-type="commerce-cart-open-link" aria-haspopup="dialog" aria-label="Open cart" role="button" class="w-commerce-commercecartopenlink cart-button w-inline-block">
+                                <div class="nav-link">Cart</div>
+                                <div class="cart-number-holder">
+                                    <div class="cart-number">(</div>
+                                    <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D"
+                                        class="w-commerce-commercecartopenlinkcount cart-number">0</div>
+                                    <div class="cart-number">)</div>
+                                </div>
+                            </a>
+                            <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightDropdown">
+                                <div role="dialog" data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer cart-holder">
+                                    <div class="w-commerce-commercecartheader cart-header">
+                                        <h4 class="w-commerce-commercecartheading">Your Cart</h4><a href="#" data-node-type="commerce-cart-close-link" role="button" aria-label="Close cart" class="w-commerce-commercecartcloselink w-inline-block"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659311ec9ef09a39d5b1ff7e_X%20Icon.svg" loading="lazy" alt="" class="x-icon"/></a></div>
+                                    <div
+                                        class="w-commerce-commercecartformwrapper cart-form-wrapper">
+                                        <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform">
+                                            <script type="text/x-wf-template" id="wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe0">%3Cdiv%20class%3D%22w-commerce-commercecartitem%20cart-item%22%3E%3Cdiv%20class%3D%22cart-hero%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20product-thumbnail%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22product-details-holder%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20product-name%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522Option%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522option%2522%252C%2522params%2522%253A%255B%2522option%2522%252C%2522option%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_ec_product_type_2dr10dr.name%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20category%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%20remove-button%22%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20aria-label%3D%22Remove%20item%20from%20cart%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22remove-button-x%20w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22price-and-quantity%22%3E%3Cdiv%20class%3D%22quantity-holder%22%3E%3Cp%20class%3D%22no-margins%22%3EQuantity%3C%2Fp%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%257B%2522condition%2522%253A%257B%2522fields%2522%253A%257B%2522product%253Aec-product-type%2522%253A%257B%2522ne%2522%253A%2522e348fd487d0102946c9179d2a94bb613%2522%252C%2522type%2522%253A%2522Option%2522%257D%257D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D%2522%257D%22%20class%3D%22w-commerce-commercecartquantity%20cart-quantity-menu%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22options-holder%22%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe6%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%2520class%253D%2522category%2520w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%2520class%253D%2522category%2520white-text%2520w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe6%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22category%20w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22category%20white-text%20w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.price%2522%257D%257D%255D%22%20class%3D%22product-cart-price%22%3E%24%C2%A00.00%C2%A0USD%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E</script>
+                                            <div
+                                                class="w-commerce-commercecartlist cart-list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe0">
+                                                <div class="w-commerce-commercecartitem cart-item">
+                                                    <div class="cart-hero"><img data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D"
+                                                            src="" alt="" class="w-commerce-commercecartitemimage product-thumbnail w-dyn-bind-empty" />
+                                                        <div class="product-details-holder">
+                                                            <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D"
+                                                                class="w-commerce-commercecartproductname product-name w-dyn-bind-empty"></div>
+                                                            <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Option%22%2C%22filter%22%3A%7B%22type%22%3A%22option%22%2C%22params%22%3A%5B%22option%22%2C%22option%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_ec_product_type_2dr10dr.name%22%7D%7D%5D"
+                                                                class="w-commerce-commercecartproductname category w-dyn-bind-empty"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-commerce-commercecartiteminfo remove-button"><a href="#" role="button" aria-label="Remove item from cart" data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D"
+                                                            class="remove-button-x w-inline-block" data-wf-cart-action="remove-item" data-commerce-sku-id=""></a></div>
+                                                    <div class="price-and-quantity">
+                                                        <div class="quantity-holder">
+                                                            <p class="no-margins">Quantity</p><input aria-label="Update quantity" data-wf-bindings="%5B%7B%22value%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.count%22%7D%7D%2C%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D"
+                                                                data-wf-conditions="%7B%22condition%22%3A%7B%22fields%22%3A%7B%22product%3Aec-product-type%22%3A%7B%22ne%22%3A%22e348fd487d0102946c9179d2a94bb613%22%2C%22type%22%3A%22Option%22%7D%7D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D%22%7D"
+                                                                class="w-commerce-commercecartquantity cart-quantity-menu" required="" pattern="^[0-9]+$" inputMode="numeric" type="number" name="quantity" autoComplete="off" data-wf-cart-action="update-item-quantity"
+                                                                data-commerce-sku-id="" value="1" /></div>
+                                                        <div class="options-holder">
+                                                            <script type="text/x-wf-template" id="wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe6">%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22category%20w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22category%20white-text%20w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E</script>
+                                                            <ul
+                                                                data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D"
+                                                                class="w-commerce-commercecartoptionlist" data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr" data-wf-template-id="wf-template-6ec2beb4-4f69-d272-1424-83d47f66afe6">
+                                                                <li><span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D.name%22%7D%7D%5D"
+                                                                        class="category w-dyn-bind-empty"></span><span>: </span><span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D%22%7D%7D%5D"
+                                                                        class="category white-text w-dyn-bind-empty"></span></li>
+                                                                </ul>
+                                                                <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.price%22%7D%7D%5D"
+                                                                    class="product-cart-price">$ 0.00 USD</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                </div>
+                                <div class="w-commerce-commercecartfooter cart-footer">
+                                    <div aria-atomic="true" aria-live="polite" class="w-commerce-commercecartlineitem">
+                                        <div class="sub-total">Subtotal</div>
+                                        <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D"
+                                            class="w-commerce-commercecartordervalue product-cart-price"></div>
+                                    </div>
+                                    <div>
+                                        <div data-node-type="commerce-cart-quick-checkout-actions" style="display:none">
+                                            <a data-node-type="commerce-cart-apple-pay-button" role="button" tabindex="0" aria-label="Apple Pay" aria-haspopup="dialog" style="background-image:-webkit-named-image(apple-pay-logo-white);background-size:100% 50%;background-position:50% 50%;background-repeat:no-repeat"
+                                                class="w-commerce-commercecartapplepaybutton" tabindex="0">
+                                                <div></div>
+                                            </a><a data-node-type="commerce-cart-quick-checkout-button" role="button" tabindex="0" aria-haspopup="dialog" style="display:none" class="w-commerce-commercecartquickcheckoutbutton"><svg class="w-commerce-commercequickcheckoutgoogleicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649"></polygon><polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443"></polygon></defs><g fill="none" fill-rule="evenodd"><path fill="#4285F4" d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469"></path><path fill="#34A853" d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16"></path><g transform="translate(0 4)"><mask id="google-mark-b" fill="#fff"><use xlink:href="#google-mark-a"></use></mask><path fill="#FBBC04" d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337" mask="url(#google-mark-b)"></path></g><mask id="google-mark-d" fill="#fff"><use xlink:href="#google-mark-c"></use></mask><path fill="#EA4335" d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291" mask="url(#google-mark-d)"></path></g></svg><svg class="w-commerce-commercequickcheckoutmicrosofticon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><polygon fill="#F05022" points="7 7 1 7 1 1 7 1"></polygon><polygon fill="#7DB902" points="15 7 9 7 9 1 15 1"></polygon><polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9"></polygon><polygon fill="#FFB700" points="15 15 9 15 9 9 15 9"></polygon></g></svg><div>Pay with browser.</div></a></div>
+                                        <a
+                                            href="/checkout" value="Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton button" data-loading-text="Hang Tight...">Checkout</a>
+                                    </div>
+                                </div>
+                                </form>
+                                <div class="w-commerce-commercecartemptystate empty-state">
+                                    <div aria-live="polite" aria-label="This cart is empty">No items found.</div>
+                                </div>
+                                <div aria-live="assertive" style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-message small">
+                                    <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site."
+                                        data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">Product is not available in this quantity.</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="menu-cart-holder">
+                <div class="menu-button w-nav-button">
+                    <div class="w-icon-nav-menu"></div>
+                </div>
+                <div class="nav-menu-button-holder"><a href="/ovo-glossy.webflow.io/log-in.html" class="button navbar-button w-button">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div data-w-id="92be72c0-3a98-a5eb-437e-48540808feff" class="section hero-section">
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-section-center-holder">
+                    <div style="-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                        class="animate-on-load-01">
+                        <a href="/blog-pages/blog-v1" class="news-holder w-inline-block">
+                            <div class="news-title">
+                                <div>New feature</div>
+                            </div>
+                            <div class="grey-text">Glossy&#x27;s Fast Theme Changes</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593197bcd940a3b00832ae9_News%20Icon.svg" loading="lazy" alt="" /></a>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                        class="animate-on-load-02">
+                        <div class="hero-center-text">
+                            <h1 class="title">Glossy Code Craft Elevate Your Coding Experience</h1>
+                        </div>
+                    </div>
+                    <div style="opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                        class="animate-on-load-03">
+                        <div class="center-hero-paragraph-holder">
+                            <p>Empower your creativity with Glossy, a cutting-edge coding tool inspired by simplicity and efficiency unleash the full potential of your projects.</p>
+                        </div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                        class="animate-on-load-04">
+                        <div class="hero-button-holder"><a href="/pricing" class="button with-icon w-button">Get Started</a><a href="/ovo-glossy.webflow.io/sign-up.html" class="button outline w-button">Sign up</a></div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(-46deg) rotateY(null) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(-46deg) rotateY(null) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(-46deg) rotateY(null) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(-46deg) rotateY(null) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                        class="hero-app-wrapper">
+                        <div style="background-color:rgba(24,58,69,0);border-color:rgba(255,255,255,0)" class="hero-app-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot.webp" loading="lazy" style="opacity:0" sizes="(max-width: 479px) 92vw, (max-width: 767px) 90vw, (max-width: 991px) 92vw, (max-width: 1439px) 93vw, 1124px"
+                                alt="" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-1600.png 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-2000.png 2000w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot.webp 2171w"
+                                class="hero-app" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001.webp" loading="lazy" style="-webkit-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:contrast(200%);opacity:0"
+                    sizes="(max-width: 767px) 100vw, (max-width: 1439px) 94vw, 1260px" alt="" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-500.webp 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-800.webp 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-1080.webp 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-1600.webp 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-2000.webp 2000w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001.webp 2048w"
+                    class="hero-background" /></div>
+        </div>
+    </div>
+    <div class="trusted-by">
+        <div class="center-text">
+            <div class="fade-in-on-scroll">
+                <p>Join 4,000+ companies already growing</p>
+            </div>
+        </div>
+        <div class="fade-in-on-scroll">
+            <div class="company-logo-holder">
+                <div class="company-logo-container">
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659311ec9ef09a39d5b1fec4_Logo%2005.svg" loading="lazy" alt="" class="company-logo" /></div>
+                </div>
+                <div class="company-logo-container">
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b85_Logo%2003.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b82_Logo%2004.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b79_Logo%2005.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b84_Logo%2001.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/6537b1db509ef0817e8f4b5d/6537b1db509ef0817e8f4b83_Logo%2002.svg" loading="lazy" alt="" class="company-logo" /></div>
+                    <div class="company-logo-wrapper"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659311ec9ef09a39d5b1fec4_Logo%2005.svg" loading="lazy" alt="" class="company-logo" /></div>
+                </div>
+                <div class="graident-for-logos"></div>
+                <div class="graident-for-logos right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section-center-text">
+                <div class="section-title">
+                    <div class="fade-in-on-scroll">
+                        <h2 class="title medium">Our Features</h2>
+                    </div>
+                </div>
+                <div class="section-paragraph">
+                    <div class="fade-in-on-scroll">
+                        <p>Discover a world of possibilities with Glossy&#x27;s exceptional features tailored to enhance your coding journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div id="w-node-a879836a-9754-f703-ded8-36e24323999e-d5b1fe8e" data-w-id="a879836a-9754-f703-ded8-36e24323999e" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209ffbcdaf0447514dbe_Feature%20Icon%2006.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Smart Autocomplete</div>
+                    </div>
+                    <div class="feature-paragraph">Revolutionize your coding speed with Glossy&#x27;s intelligent autocomplete feature. </div>
+                </div>
+                <div id="w-node-_0e95b2c5-2f00-b168-ac3c-be5b1b041c18-d5b1fe8e" data-w-id="0e95b2c5-2f00-b168-ac3c-be5b1b041c18" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f9e5c806d8c4a827a_Feature%20Icon%2005.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Real-time Collaboration</div>
+                    </div>
+                    <div class="feature-paragraph">Enhance team productivity with Glossy&#x27;s real-time collaboration. Seamlessly code togethe.</div>
+                </div>
+                <div id="w-node-afb3602e-1be2-5e92-39a5-9e3c028e4736-d5b1fe8e" data-w-id="afb3602e-1be2-5e92-39a5-9e3c028e4736" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f1aec033fa6fb0ebc_Feature%20Icon%2003.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Customizable Themes</div>
+                    </div>
+                    <div class="feature-paragraph">Tailor your coding environment with Glossy&#x27;s customizable themes. From vibrant palettes to soothing tones, personalize your workspace</div>
+                </div>
+                <div id="w-node-_5181c601-8e8e-52fc-36a1-6914eb34e759-d5b1fe8e" data-w-id="5181c601-8e8e-52fc-36a1-6914eb34e759" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f3d9ad4acd5973ef1_Feature%20Icon%2004.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Effortless Debugging</div>
+                    </div>
+                    <div class="feature-paragraph">Troubleshoot with ease using Glossy&#x27;s intuitive debugging tools. Identify and fix issues swiftly, improving code reliability and ensuring a smooth development process.</div>
+                </div>
+                <div id="w-node-_244d444e-f063-bdd2-f437-59e1fa4bfc81-d5b1fe8e" data-w-id="244d444e-f063-bdd2-f437-59e1fa4bfc81" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209fcc1dfe31356cee2d_Feature%20Icon%2002.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Multi-language Support</div>
+                    </div>
+                    <div class="feature-paragraph">Dive into versatile coding experiences with Glossy&#x27;s extensive language support. From Python to JavaScript, our tool adapts to your need.</div>
+                </div>
+                <div id="w-node-aaf145c9-3c8f-6f70-8eaa-52f4ef4861b7-d5b1fe8e" data-w-id="aaf145c9-3c8f-6f70-8eaa-52f4ef4861b7" style="opacity:0" class="feature-item">
+                    <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f29117d770315093d_Feature%20Icon%2001.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                    <div class="feature-text-holder">
+                        <div class="feature-text">Cloud Integration</div>
+                    </div>
+                    <div class="feature-paragraph">Elevate your workflow with Glossy&#x27;s seamless cloud integration. Access your projects anytime, anywhere, and collaborate effortlessly.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section-paddings">
+                <div class="section-center-text">
+                    <div class="section-tag">
+                        <div>New feature</div>
+                    </div>
+                    <div class="section-title xl">
+                        <div class="fade-in-on-scroll">
+                            <h2 class="title medium">Glossy Unleashed: Latest Innovations</h2>
+                        </div>
+                    </div>
+                    <div class="section-paragraph">
+                        <div class="fade-in-on-scroll">
+                            <p>Explore the frontier of coding evolution with Glossy Unleashed. Our latest features redefine the boundaries of what&#x27;s possible in coding tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-features-holder">
+                    <div class="w-layout-grid new-features-grid">
+                        <div id="w-node-_0e7bf4ef-0cb9-d656-ae4d-41022f5a27fa-d5b1fe8e" class="feature-grid-content">
+                            <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f7da1e8db6370ff84_Feature%20Icon%2007.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                            <div class="feature-grid-content-holder">
+                                <div class="feature-grid-title">Personalized Coding Haven</div>
+                                <p>Introducing Profile View, your gateway to a personalized coding haven. Tailor your workspace with custom layouts.</p>
+                            </div>
+                            <div class="checked-list-holder">
+                                <ul role="list" class="w-list-unstyled">
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Customizable layouts for efficient coding.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Font preferences to match your style.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Create multiple profiles for versatility.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="w-node-_279527ce-08bc-deeb-e599-bc9c13ef82ac-d5b1fe8e" class="feature-grid-image-holder"><img class="feature-image" src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001.png" alt="" style="opacity:0" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                data-w-id="aceece89-48dc-7e0b-a1db-d0d99d9e4c33" loading="lazy" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001-p-1600.png 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30b5e9bd9a4daef266_Feature%20Image%2001.png 1686w"
+                            /><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png 1124w"
+                                alt="" class="background-image" /></div>
+                    </div>
+                    <div class="w-layout-grid new-features-grid">
+                        <div id="w-node-bba29520-f1f1-13e4-e629-8ee25e1c1b3f-d5b1fe8e" class="feature-grid-image-holder"><img class="feature-image" src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002.png" alt="" style="opacity:0" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                data-w-id="bba29520-f1f1-13e4-e629-8ee25e1c1b40" loading="lazy" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002-p-1600.png 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d30e8e175dfffd0514a_Feature%20Image%2002.png 1680w"
+                            /><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png 1124w"
+                                alt="" class="background-image" /></div>
+                        <div id="w-node-bba29520-f1f1-13e4-e629-8ee25e1c1b26-d5b1fe8e" class="feature-grid-content">
+                            <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f1aec033fa6fb0ebc_Feature%20Icon%2003.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                            <div class="feature-grid-content-holder">
+                                <div class="feature-grid-title">Vibrant Coding Aesthetics</div>
+                                <p>Immerse yourself in the world of vibrant coding aesthetics with Editor Color Changes. Elevate your visual experience by.</p>
+                            </div>
+                            <div class="checked-list-holder">
+                                <ul role="list" class="w-list-unstyled">
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Choose from a variety of themes.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Reduce eye strain with customization.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Create your coding ambiance effortlessly.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-layout-grid new-features-grid">
+                        <div id="w-node-ba17a640-6341-ad45-3fa1-17b7073094a2-d5b1fe8e" class="feature-grid-content">
+                            <div class="feature-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f76ad0794ac5cd8fe_Feature%20Icon%2009.svg" loading="lazy" alt="" class="feature-icon" /></div>
+                            <div class="feature-grid-content-holder">
+                                <div class="feature-grid-title">Swift Theme Transitions</div>
+                                <p>Experience coding in the fast lane with Glossy&#x27;s Fast Theme Changes. Switch between coding themes seamlessly.</p>
+                            </div>
+                            <div class="checked-list-holder">
+                                <ul role="list" class="w-list-unstyled">
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Instant theme changes for efficiency.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Adapt your coding environment quickly.</div>
+                                    </li>
+                                    <li class="list-item">
+                                        <div class="check-icon-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a0d4215558dc1a2d17_Check%20Icon.svg" loading="lazy" alt="" class="check-icon" /></div>
+                                        <div class="check-item-text">Effortlessly switch between coding moods.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="w-node-ba17a640-6341-ad45-3fa1-17b7073094bb-d5b1fe8e" class="feature-grid-image-holder"><img class="feature-image" src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003.png" alt="" style="opacity:0" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                data-w-id="ba17a640-6341-ad45-3fa1-17b7073094bc" loading="lazy" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003-p-1600.png 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3001e569d223c33dbb_Feature%20Image%2003.png 1680w"
+                            /><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1439px) 95vw, 1142px"
+                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65941d3078f2334d65554911_Feature%20BG%20Image.png 1124w"
+                                alt="" class="background-image" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section overflow-hidden">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="section-paddings">
+                <div class="section-center-text">
+                    <div class="section-title xl">
+                        <div class="fade-in-on-scroll">
+                            <h2 class="title medium">Voices of Innovation, Testimonials</h2>
+                        </div>
+                    </div>
+                    <div class="section-paragraph">
+                        <div class="fade-in-on-scroll">
+                            <p>Discover what the coding community is saying about Glossy in our Testimonials section. Immerse yourself in firsthand experiences as developers share.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-delay="4000" data-animation="slide" class="testimonal-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500"
+                    data-infinite="false">
+                    <div class="testimonal-mask w-slider-mask">
+                        <div class="testimonal-slide w-slide">
+                            <div class="testimonial-text">&quot;Fast Theme Changes in Glossy have transformed the way I work. Switching between themes on-the-fly helps me align my coding environment with different project requirements swiftly. Glossy has truly streamlined my workflow.&quot;</div>
+                            <div
+                                class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a1e941013c01af5a6_Testimonial%20User%2001.jpg" loading="lazy" alt="" class="user-image" />
+                                <div class="testimonial-info-text">
+                                    <div class="user-name">Emily Chen</div>
+                                    <div class="user-job-position">DevOps Specialist</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="testimonal-slide w-slide">
+                        <div class="testimonial-text">&quot;Glossy has redefined my coding experience. The Profile View feature allows me to seamlessly switch between different project setups, enhancing my efficiency. It&#x27;s become an indispensable companion in my quest for coding
+                            perfection.&quot;</div>
+                        <div class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a00c13302fbd7b0fc_Testimonial%20User%2003.jpg" loading="lazy" alt="" class="user-image" />
+                            <div class="testimonial-info-text">
+                                <div class="user-name">Sarah Thompson</div>
+                                <div class="user-job-position">Senior Software Engineer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonal-slide w-slide">
+                        <div class="testimonial-text">&quot;Editor Color Changes in Glossy let me curate a visually pleasing environment for coding. The diverse color themes not only boost my creativity but also contribute to a more enjoyable and less stressful coding experience.&quot;</div>
+                        <div
+                            class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a1addf207d5c99f05_Testimonial%20User%2002.jpg" loading="lazy" alt="" class="user-image" />
+                            <div class="testimonial-info-text">
+                                <div class="user-name">Alex Rodriguez</div>
+                                <div class="user-job-position">UX/UI Frontend Developer</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="testimonal-slide w-slide">
+                    <div class="testimonial-text">&quot;Fast Theme Changes in Glossy have transformed the way I work. Switching between themes on-the-fly helps me align my coding environment with different project requirements swiftly. Glossy has truly streamlined my workflow.&quot;</div>
+                    <div
+                        class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a1e941013c01af5a6_Testimonial%20User%2001.jpg" loading="lazy" alt="" class="user-image" />
+                        <div class="testimonial-info-text">
+                            <div class="user-name">Emily Chen</div>
+                            <div class="user-job-position">DevOps Specialist</div>
+                        </div>
+                </div>
+            </div>
+            <div class="testimonal-slide w-slide">
+                <div class="testimonial-text">&quot;Glossy has redefined my coding experience. The Profile View feature allows me to seamlessly switch between different project setups, enhancing my efficiency. It&#x27;s become an indispensable companion in my quest for coding perfection.&quot;</div>
+                <div
+                    class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a00c13302fbd7b0fc_Testimonial%20User%2003.jpg" loading="lazy" alt="" class="user-image" />
+                    <div class="testimonial-info-text">
+                        <div class="user-name">Sarah Thompson</div>
+                        <div class="user-job-position">Senior Software Engineer</div>
+                    </div>
+            </div>
+        </div>
+        <div class="testimonal-slide w-slide">
+            <div class="testimonial-text">&quot;Editor Color Changes in Glossy let me curate a visually pleasing environment for coding. The diverse color themes not only boost my creativity but also contribute to a more enjoyable and less stressful coding experience.&quot;</div>
+            <div
+                class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a1addf207d5c99f05_Testimonial%20User%2002.jpg" loading="lazy" alt="" class="user-image" />
+                <div class="testimonial-info-text">
+                    <div class="user-name">Alex Rodriguez</div>
+                    <div class="user-job-position">UX/UI Frontend Developer</div>
+                </div>
+        </div>
+    </div>
+    <div class="testimonal-slide w-slide">
+        <div class="testimonial-text">&quot;Fast Theme Changes in Glossy have transformed the way I work. Switching between themes on-the-fly helps me align my coding environment with different project requirements swiftly. Glossy has truly streamlined my workflow.&quot;</div>
+        <div
+            class="testimonal-info"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6595638a1e941013c01af5a6_Testimonial%20User%2001.jpg" loading="lazy" alt="" class="user-image" />
+            <div class="testimonial-info-text">
+                <div class="user-name">Emily Chen</div>
+                <div class="user-job-position">DevOps Specialist</div>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="left-arrow w-slider-arrow-left">
+        <div class="arrow-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a019a3d673bea2af28_Arrow%20Left.svg" loading="lazy" alt="" class="arrow-icon" /></div>
+    </div>
+    <div class="right-arrow w-slider-arrow-right">
+        <div class="arrow-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659320a00375bb6172dc2e39_Arrow%20Right.svg" loading="lazy" alt="" class="arrow-icon right-side" /></div>
+    </div>
+    <div class="hide w-slider-nav w-round w-num"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section-paddings">
+                <div class="section-center-text">
+                    <div class="section-title xl">
+                        <div class="fade-in-on-scroll">
+                            <h2 class="title medium">Coding Chronicles Insights &amp; Inspiration</h2>
+                        </div>
+                    </div>
+                    <div class="section-paragraph">
+                        <div class="fade-in-on-scroll">
+                            <p>Dive into the heart of innovation with our &#x27;Coding Chronicles&#x27; blog section. Explore a rich tapestry of articles, tutorials, and insights that unravel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-features-holder">
+                    <div class="blog-grid-3x-holder">
+                        <div class="blog-grid-twos-wrapper w-dyn-list">
+                            <div role="list" class="blog-grid-3x w-dyn-items">
+                                <div role="listitem" class="blog-grid-twos-item w-dyn-item">
+                                    <a href="/post/how-to-build-strong-relationships-in-a-digital-age" class="blog-item w-inline-block">
+                                        <div class="blog-grid-3x-image-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af589d93130459571bb7a_danteboi_Black_UI_Component_figma_ui_ux_blue_af5d48fd-d845-4eba-b497-12ac62ec2d5a.png" loading="lazy" alt="" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, (max-width: 1439px) 30vw, 361.34375px"
+                                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af589d93130459571bb7a_danteboi_Black_UI_Component_figma_ui_ux_blue_af5d48fd-d845-4eba-b497-12ac62ec2d5a-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af589d93130459571bb7a_danteboi_Black_UI_Component_figma_ui_ux_blue_af5d48fd-d845-4eba-b497-12ac62ec2d5a-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af589d93130459571bb7a_danteboi_Black_UI_Component_figma_ui_ux_blue_af5d48fd-d845-4eba-b497-12ac62ec2d5a.png 1024w"
+                                                class="blog-grid-2x-image" /></div>
+                                        <div class="content">
+                                            <div class="blog-date">April 8, 2023</div>
+                                            <div class="blog-title-holder">
+                                                <div class="blog-grid-2x-title">How to Build Strong Relationships in a Digital Age</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f6df8ea43c3f395de_Blog%20Icon.svg" loading="lazy" alt="" class="blog-arrow"
+                                                /></div>
+                                            <p>Aut omnis repudiandae et. Minima et deleniti et. Ut aut voluptatibus corporis aliquam in praesentium a officiis aut.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div role="listitem" class="blog-grid-twos-item w-dyn-item">
+                                    <a href="/post/14-common-misconceptions-about-web-design" class="blog-item w-inline-block">
+                                        <div class="blog-grid-3x-image-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af59c2ff838ac18c82891_danteboi_Black_UI_Component_figma_ui_ux_blue_fcf5bae4-0df7-4f6c-b55b-670258956652.png" loading="lazy" alt="" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, (max-width: 1439px) 30vw, 361.34375px"
+                                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af59c2ff838ac18c82891_danteboi_Black_UI_Component_figma_ui_ux_blue_fcf5bae4-0df7-4f6c-b55b-670258956652-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af59c2ff838ac18c82891_danteboi_Black_UI_Component_figma_ui_ux_blue_fcf5bae4-0df7-4f6c-b55b-670258956652-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af59c2ff838ac18c82891_danteboi_Black_UI_Component_figma_ui_ux_blue_fcf5bae4-0df7-4f6c-b55b-670258956652.png 1024w"
+                                                class="blog-grid-2x-image" /></div>
+                                        <div class="content">
+                                            <div class="blog-date">April 8, 2023</div>
+                                            <div class="blog-title-holder">
+                                                <div class="blog-grid-2x-title">14 Common Misconceptions About Web Design</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f6df8ea43c3f395de_Blog%20Icon.svg" loading="lazy" alt="" class="blog-arrow"
+                                                /></div>
+                                            <p>Cupiditate autem exercitationem numquam ipsum recusandae ducimus enim quaerat. Perferendis laboriosam recusandae voluptatem. Ut ullam doloribus.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div role="listitem" class="blog-grid-twos-item w-dyn-item">
+                                    <a href="/post/7-ways-to-improve-website-usability-and-accessibility" class="blog-item w-inline-block">
+                                        <div class="blog-grid-3x-image-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af5b3c6ff554eb6a3fa38_Blog%20Image%20Element%20(2).png" loading="lazy" alt="" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, (max-width: 1439px) 30vw, 361.34375px"
+                                                srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af5b3c6ff554eb6a3fa38_Blog%20Image%20Element%20(2)-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af5b3c6ff554eb6a3fa38_Blog%20Image%20Element%20(2)-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1feae/659af5b3c6ff554eb6a3fa38_Blog%20Image%20Element%20(2).png 1024w"
+                                                class="blog-grid-2x-image" /></div>
+                                        <div class="content">
+                                            <div class="blog-date">April 8, 2023</div>
+                                            <div class="blog-title-holder">
+                                                <div class="blog-grid-2x-title">7 Ways To Improve Website Usability And Accessibility</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f6df8ea43c3f395de_Blog%20Icon.svg" loading="lazy" alt="" class="blog-arrow"
+                                                /></div>
+                                            <p>Aut omnis repudiandae et. Minima et deleniti et. Ut aut voluptatibus corporis aliquam in praesentium a officiis aut.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section-paddings">
+                <div class="section-center-text">
+                    <div class="section-title xl">
+                        <div class="fade-in-on-scroll">
+                            <h2 class="title medium">Frequently asked questions</h2>
+                        </div>
+                    </div>
+                    <div class="section-paragraph">
+                        <div class="fade-in-on-scroll">
+                            <p>Everything you need to know</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-holder">
+                    <div class="questions-container">
+                        <div class="question">
+                            <div class="question-text">What makes Glossy stand out among other coding tools?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy" alt="" class="question-icon" /></div>
+                        <div
+                            class="answer-holder">
+                            <div class="answer-text">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+                    </div>
+                </div>
+                <div class="questions-container">
+                    <div class="question">
+                        <div class="question-text">How does Profile View benefit developers in their day-to-day work?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy" alt="" class="question-icon"
+                        /></div>
+                    <div class="answer-holder">
+                        <div class="answer-text">Profile View allows developers to create customized coding environments, optimizing layouts, fonts, and profiles. This flexibility enables efficient switching between different project setups, enhancing productivity and creating
+                            a tailored workspace for varied coding tasks.</div>
+                    </div>
+                </div>
+                <div class="questions-container">
+                    <div class="question">
+                        <div class="question-text">Can you elaborate on the significance of Editor Color Changes in Glossy?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy" alt="" class="question-icon"
+                        /></div>
+                    <div class="answer-holder">
+                        <div class="answer-text">Editor Color Changes empower users to choose from a spectrum of color themes, enhancing the visual experience of coding. This feature not only allows for personalization but also contributes to reduced eye strain and a more enjoyable
+                            coding ambiance.</div>
+                    </div>
+                </div>
+                <div class="questions-container">
+                    <div class="question">
+                        <div class="question-text">How does Fast Theme Changes contribute to an efficient coding workflow?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy" alt="" class="question-icon"
+                        /></div>
+                    <div class="answer-holder">
+                        <div class="answer-text">Fast Theme Changes enable users to switch between coding themes seamlessly, adapting their environment to different tasks or moods swiftly. This feature is designed to reduce disruption, allowing developers to maintain focus and
+                            workflow efficiency.</div>
+                    </div>
+                </div>
+                <div class="questions-container">
+                    <div class="question">
+                        <div class="question-text">What role does Cloud Integration play in Glossy, and how does it benefit users?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy" alt="" class="question-icon"
+                        /></div>
+                    <div class="answer-holder">
+                        <div class="answer-text">Glossy&#x27;s Cloud Integration ensures that users can access and collaborate on their projects from anywhere. This feature promotes flexibility, allowing developers to work seamlessly across devices and ensuring that collaboration
+                            remains uninterrupted, even in a distributed team setup.</div>
+                    </div>
+                </div>
+                <div class="questions-container last-one">
+                    <div class="question">
+                        <div class="question-text">Can Glossy be used for specific coding languages, or does it support a wide range of languages?</div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593209f667b4612e67993bc_Plus%20Icon.svg" loading="lazy"
+                            alt="" class="question-icon" /></div>
+                    <div class="answer-holder">
+                        <div class="answer-text"> Glossy is designed to be versatile and supports a wide range of coding languages. From Python to JavaScript and beyond, Glossy provides a unified platform that adapts to the diverse needs of developers, making it suitable for a
+                            variety of projects and coding scenarios.<br/></div>
+                    </div>
+                </div>
+                <div class="fade-in-on-scroll">
+                    <div class="colored-block">
+                        <div class="questions-cta">
+                            <div class="heading-and-supporting-text">
+                                <div class="small-cta-heading">Still have questions?</div>
+                                <p class="paragraph-l">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+                            </div>
+                            <div class="content"><a href="/contact/contact-v1" class="button with-icon w-button">Contact Us</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div data-w-id="8ed71055-6ae7-5324-a6d4-54fc76e0e2d9" class="cta-wrapper">
+        <div class="container">
+            <div class="cta-container">
+                <div class="cta-form-holder">
+                    <div class="cta-heading-holder">
+                        <div class="cta-heading-wrapper">
+                            <div class="cta-heading">Transform Your Workflow with Glossy</div>
+                        </div>
+                        <div class="cta-paragraph-holder">
+                            <p>Embark on a transformative journey of coding excellence with Glossy CodeCraft.</p>
+                        </div>
+                    </div>
+                    <div class="form-block w-form">
+                        <form id="Early-Access-Emails" name="wf-form-Early-Access-Emails" data-name="Early Access Emails" method="get" class="form-holder" data-wf-page-id="659311ec9ef09a39d5b1fe8e" data-wf-element-id="8ed71055-6ae7-5324-a6d4-54fc76e0e2eb">
+                            <div class="form"><input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter email here" type="email" id="Early-Access-Emails" required="" /><input type="submit" data-wait="..." class="submit-button w-button"
+                                    value="Get Started" /></div>
+                        </form>
+                        <div class="thank-you-message w-form-done">
+                            <div><span class="white-text">Thank you! </span><br/>Your submission has been received!</div>
+                        </div>
+                        <div class="error-message w-form-fail">
+                            <div><span class="white-text">Oops! <br/></span>Something went wrong! Try again later</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-app-holder"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot.webp" loading="eager" data-w-id="afb7a514-66a8-b10a-7c8c-6b2bb26ffe8e" sizes="(max-width: 479px) 93vw, (max-width: 767px) 90vw, (max-width: 1439px) 83vw, 1009.59375px"
+                        alt="" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-500.png 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-800.png 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-1080.png 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-1600.png 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot-p-2000.png 2000w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/65931c0c3a320cb81cace0d5_App%20Screenshot.webp 2171w"
+                        class="app-image" /></div>
+            </div>
+        </div><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 70vw" srcset="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-500.webp 500w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-800.webp 800w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-1080.webp 1080w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-1600.webp 1600w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001-p-2000.webp 2000w, https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/6593190aa2bd3e339e0bb986_Colored%20Background%2001.webp 2048w"
+            alt="" class="cta-bg-image" /></div>
+    <div class="section">
+        <div class="container">
+            <div class="footer-wrapper"><a href="/ovo-glossy.webflow.io/home-v1.html" aria-current="page" class="footer-brand w-inline-block w--current"><img src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/659315bc19a3d673be9b9907_Main%20Logo.svg" loading="lazy" alt="" class="footer-brand-image"/><div class="footer-heading">Transform Your Workflow with Glossy</div><div class="footer-paragraph-holder"><p>Aliquam et tellus urna. Phasellus egetadipiscing elit. Mauris id nunc odio. Aliquam et tellus urna.</p></div></a>
+                <div
+                    class="footer-content">
+                    <div id="w-node-e92bf484-a605-4132-f141-4518468af7e2-468af7d9" class="footer-block">
+                        <div class="title-small">Main Pages</div>
+                        <div class="menu-link-wrapper">
+                            <div class="menu-links-holder"><a href="/" class="grey-link">Home (Sales)</a><a href="/ovo-glossy.webflow.io/home-v1.html" aria-current="page" class="grey-link w--current">Home V1</a><a href="/home-pages/home-v2" class="grey-link">Home V2</a><a href="/home-pages/home-v3"
+                                    class="grey-link">Home V3</a><a href="/about" class="grey-link">About</a><a href="/features" class="grey-link">Features</a><a href="/blog-pages/blog-v1" class="grey-link">Blog V1</a><a href="/blog-pages/blog-v2" class="grey-link">Blog V2</a>
+                                <a
+                                    href="/blog-pages/blog-v3" class="grey-link">Blog V3</a>
+                            </div>
+                            <div class="menu-links-holder"><a href="https://ovo-glossy.webflow.io/post/how-to-build-strong-relationships-in-a-digital-age" class="grey-link">Blog Post</a><a href="/contact/contact-v1" class="grey-link">Contact V1</a><a href="/contact/contact-v2" class="grey-link">Contact V2</a>
+                                <a
+                                    href="/contact/contact-v3" class="grey-link">Contact V3</a><a href="/pricing" class="grey-link">Pricing</a><a href="https://ovo-glossy.webflow.io/product/enterprise-plan" class="grey-link">Pricing Single</a><a href="/checkout" class="grey-link">Checkout</a></div>
+                        </div>
+                    </div>
+                    <div id="w-node-e92bf484-a605-4132-f141-4518468af7ef-468af7d9" class="footer-block">
+                        <div class="title-small">Social media</div><a href="http://instagram.com" target="_blank" class="footer-link">Instagram</a><a href="http://fb.com" target="_blank" class="footer-link">Facebook</a><a href="http://linkedin.com" target="_blank" class="footer-link">Linkedin</a>
+                        <a
+                            href="http://twitter.com" target="_blank" class="footer-link">Twitter</a>
+                    </div>
+                    <div id="w-node-e92bf484-a605-4132-f141-4518468af7fa-468af7d9" class="footer-block">
+                        <div class="title-small">Webflow stuff</div><a href="/template/style-guide" class="footer-link">Style Guide</a><a href="/template/licensing" class="footer-link">Licensing</a><a href="/template/instructions" class="footer-link">Instructions</a><a href="/template/change-log"
+                            class="footer-link">Change Log</a></div>
+            </div>
+        </div>
+        <div class="footer-divider">
+            <div class="footer-copyright-holder">
+                <div class="footer-copyright-center">Created by <a href="http://madebyoversight.com/" target="_blank" class="white-link">OVERSIGHT</a></div>
+            </div>
+            <div class="footer-copyright-holder">
+                <div class="footer-copyright-center">Powered by <a href="https://webflow.com/" target="_blank" class="white-link">WEBFLOW</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=659311ec9ef09a39d5b1fe8d" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://assets-global.website-files.com/659311ec9ef09a39d5b1fe8d/js/webflow.7dc28d4ee.js" type="text/javascript"></script>
+</body>
+
+</html>
